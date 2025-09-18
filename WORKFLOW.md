@@ -59,6 +59,38 @@ Becomes:
 - [ ] Layout is correct
 - [ ] No missing content
 
+### 5. ATS Testing (NEW)
+**Purpose**: Ensure resume is ATS-compatible while maintaining human readability
+
+**Basic ATS Test**:
+```bash
+python ats_testing_script.py harris_resume.pdf
+```
+
+**Advanced ATS Test**:
+```bash
+python advanced_ats_test.py harris_resume.pdf --output ats_results.json
+```
+
+**Create ATS-Optimized Version**:
+```bash
+python create_ats_optimized_resume.py
+xelatex harris_resume_ats_optimized.tex
+```
+
+**Compare Versions**:
+```bash
+python compare_resumes.py
+```
+
+**ATS Verification Checklist**:
+- [ ] ATS score is 70+ (target: 90+)
+- [ ] Text extracts cleanly
+- [ ] Contact information is complete
+- [ ] Work experience is parseable
+- [ ] No problematic characters
+- [ ] Human readability maintained
+
 ## Detailed Workflow
 
 ### Step 1: Content Creation
@@ -291,6 +323,27 @@ git push origin feature/update-resume
 - Verify layout integrity
 - Test on different systems
 
+## ATS Testing Integration
+
+### Testing Dependencies
+Install required Python packages:
+```bash
+pip install -r requirements.txt
+```
+
+### Testing Scripts Overview
+- **`ats_testing_script.py`**: Basic ATS compatibility testing
+- **`advanced_ats_test.py`**: Simulates actual ATS parsing
+- **`compare_resumes.py`**: Compares original vs optimized versions
+- **`create_ats_optimized_resume.py`**: Creates ATS-optimized versions
+
+### ATS Testing Best Practices
+1. **Always test after changes**: Run ATS tests after any resume modifications
+2. **Compare versions**: Use comparison tool to verify improvements
+3. **Target score**: Aim for 90+ ATS score
+4. **Maintain readability**: Ensure human appeal is preserved
+5. **Document results**: Save test results for future reference
+
 ## Future Improvements
 
 ### Automation Goals
@@ -298,9 +351,11 @@ git push origin feature/update-resume
 - Template variable substitution
 - Automated compilation pipeline
 - Quality assurance checks
+- **NEW**: Automated ATS optimization pipeline
 
 ### Potential Tools
 - Custom Pandoc filters
 - LaTeX template engines
 - CI/CD pipeline
 - Automated testing
+- **NEW**: Real ATS system integration testing

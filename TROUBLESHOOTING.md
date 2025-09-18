@@ -383,6 +383,69 @@ Create `minimal.tex`:
 \end{document}
 ```
 
+## ATS Testing Issues
+
+### Issue 1: ATS Test Scripts Not Working
+
+#### Symptoms
+- Python scripts fail to run
+- Import errors for PDF libraries
+- Missing dependencies
+
+#### Solution
+```bash
+# Install required dependencies
+pip install -r requirements.txt
+
+# Verify installation
+python -c "import PyPDF2, pdfplumber; print('Dependencies OK')"
+```
+
+### Issue 2: Low ATS Score
+
+#### Symptoms
+- ATS score below 70
+- Text extraction issues
+- Parsing errors
+
+#### Solution
+```bash
+# Run comprehensive analysis
+python advanced_ats_test.py harris_resume.pdf
+
+# Create optimized version
+python create_ats_optimized_resume.py
+
+# Test optimized version
+python advanced_ats_test.py harris_resume_ats_optimized.pdf
+```
+
+### Issue 3: ATS Optimization Not Working
+
+#### Symptoms
+- Optimized version has same issues
+- No improvement in ATS score
+- Characters not replaced properly
+
+#### Solution
+1. Check LaTeX file for manual fixes needed
+2. Verify character replacements in source
+3. Recompile with XeLaTeX
+4. Test with comparison script
+
+### Issue 4: Human Readability Lost
+
+#### Symptoms
+- Resume looks worse after optimization
+- Formatting broken
+- Visual appeal reduced
+
+#### Solution
+1. Use comparison tool to identify changes
+2. Adjust optimization parameters
+3. Test both versions side by side
+4. Maintain balance between ATS and human appeal
+
 ## Getting Help
 
 ### Log Analysis
@@ -391,17 +454,24 @@ Create `minimal.tex`:
 3. Search for solutions online
 4. Check LaTeX documentation
 
+### ATS Testing Resources
+- `ATS_TESTING_GUIDE.md`: Comprehensive testing methodology
+- Test result JSON files for detailed analysis
+- Comparison tool output for version differences
+
 ### Community Resources
 - LaTeX Stack Exchange
 - AltaCV GitHub repository
 - TeX Live documentation
 - Font configuration guides
+- ATS compatibility forums
 
 ### Escalation Steps
 1. Try minimal working example
 2. Check system requirements
 3. Verify installation
-4. Contact support if needed
+4. Run ATS tests for specific issues
+5. Contact support if needed
 
 ## Prevention Checklist
 

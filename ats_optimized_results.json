@@ -1,0 +1,84 @@
+{
+  "contact_info": {
+    "name": "Independent Consultant",
+    "email": "harris.b.gordon@gmail.com",
+    "phone": "+1610-442-0918",
+    "location": "York,NY",
+    "linkedin": "",
+    "complete": true
+  },
+  "work_experience": {
+    "jobs": [
+      {
+        "title": "Project1: TurnaroundOperator(YC-BackedSeriesAClient)",
+        "company": "",
+        "dates": "",
+        "achievements": [
+          "EmbeddedasthefoundingAccountManagertostabilizeachaoticGTMmotionandretainhigh-valueenterprise",
+          "Saved$900kinat-riskARRbyquarterbackingaP0crisisresponseforaflagshipaccount,co-designinganew",
+          "Unlocked$2.2MinenterprisepipelinebyarchitectinganewGTMoperatingsystem,sunsettinganunprofitableSMB"
+        ]
+      },
+      {
+        "title": "Project2: VentureBuilder(YC-BackedSeriesCClient)",
+        "company": "",
+        "dates": "",
+        "achievements": [
+          "Architectedandexecuteda0-to-1venturebuildforanewlabormarketplaceinthehighlyregulatedECEsector.",
+          "Securedaformalpilotagreementwithamajormulti-siteoperatorinjust11weeks,progressingtheventurefrom0to1.",
+          "Diagnosedthetrue\u2019hair-on-fire\u2019problemfordaycaredirectorsvia25+customerinterviews,leadingtoapivottoa",
+          "Builttheventure\u2019send-to-endoperationalinfrastructureasthesoloDRI,establishingthelegalentity,securing",
+          "BuiltaverticalSaaSplatformformedicalsupplymanagementthatcut20+weeklystaffhours,leadingthecompanyto",
+          "RaisedventurefundingfromBienvilleCapitalaftervalidatingproduct-marketfitwith65+customerinterviews.",
+          "Launchedandscaledthecompany\u2019sfirstB2B2Cgrowthproduct(Patient.Page),drivinga20%increaseinnew",
+          "DevelopedVRtrainingtoolsthatimprovedsurgerypatientsatisfactionby33%,leadingthecompanyfrominceptionto",
+          "RaisedventurefundingfromTechstars,SinaiVentures,andFundersClubwhileleadingproduct,operations,and"
+        ]
+      }
+    ],
+    "parsed_well": false,
+    "issues": [
+      "Work experience not parsed correctly"
+    ]
+  },
+  "education": {
+    "institutions": [
+      {
+        "degree": "EDUCATION",
+        "institution": "",
+        "dates": ""
+      },
+      {
+        "degree": "Cognitive Science and Computer Science",
+        "institution": "",
+        "dates": ""
+      },
+      {
+        "degree": "VassarCollege",
+        "institution": "",
+        "dates": ""
+      },
+      {
+        "degree": "August2011-May2015 (cid:153) Poughkeepsie,NY",
+        "institution": "",
+        "dates": ""
+      }
+    ],
+    "parsed_well": true,
+    "issues": []
+  },
+  "skills": {
+    "skill_categories": [],
+    "parsed_well": false,
+    "issues": [
+      "Skills not parsed correctly"
+    ]
+  },
+  "ats_issues": [
+    "Special bullet points may not parse well in some ATS systems",
+    "Non-ASCII characters may cause ATS parsing issues",
+    "Inconsistent line lengths may confuse ATS parsing"
+  ],
+  "optimization_score": 45,
+  "optimized_text": "HARRIS GORDON 2x Venture-Backed Founder and Turnaround Operator (cid:415)harris.b.gordon@gmail.com (cid:215)+1610-442-0918 (cid:153)NewYork,NY (cid:93)harris-gordon-2a867263 (cid:231)harrisgordon.me WORK EXPERIENCE Independent Consultant / Venture Builder Self-Employed (cid:107) February2025-Present Project1: TurnaroundOperator(YC-BackedSeriesAClient) * EmbeddedasthefoundingAccountManagertostabilizeachaoticGTMmotionandretainhigh-valueenterprise accounts. * Saved$900kinat-riskARRbyquarterbackingaP0crisisresponseforaflagshipaccount,co-designinganew enterprisereleaseprotocoltorebuildtrust. * Unlocked$2.2MinenterprisepipelinebyarchitectinganewGTMoperatingsystem,sunsettinganunprofitableSMB segmenttofocusresourcesonhigh-valueaccounts. Project2: VentureBuilder(YC-BackedSeriesCClient) * Architectedandexecuteda0-to-1venturebuildforanewlabormarketplaceinthehighlyregulatedECEsector. * Securedaformalpilotagreementwithamajormulti-siteoperatorinjust11weeks,progressingtheventurefrom0to1. * Diagnosedthetrue hair-on-fire problemfordaycaredirectorsvia25+customerinterviews,leadingtoapivottoa niche,compliant On-DemandFloater model. * Builttheventure send-to-endoperationalinfrastructureasthesoloDRI,establishingthelegalentity,securing insurance,andarchitectingtheV1ofallGTMandonboardingplaybooks. Co-Founder and CEO, Scalpel Scalpel (cid:107) October2022-January2025 * BuiltaverticalSaaSplatformformedicalsupplymanagementthatcut20+weeklystaffhours,leadingthecompanyto acquisitionnegotiations. * RaisedventurefundingfromBienvilleCapitalaftervalidatingproduct-marketfitwith65+customerinterviews. Commercial Product Manager, Capsule Pharmacy CapsulePharmacy (cid:107) February2021-October2022 * Launchedandscaledthecompany sfirstB2B2Cgrowthproduct(Patient.Page),drivinga20%increaseinnew customeracquisitioninYear1. Co-Founder and COO, eevo eevo (cid:107) May2014-January2021 * DevelopedVRtrainingtoolsthatimprovedsurgerypatientsatisfactionby33%,leadingthecompanyfrominceptionto asuccessfulexit. * RaisedventurefundingfromTechstars,SinaiVentures,andFundersClubwhileleadingproduct,operations,and sales. EDUCATION Cognitive Science and Computer Science VassarCollege (cid:107) August2011-May2015 (cid:153) Poughkeepsie,NY SKILLS TurnaroundandGTMStrategy CrisisManagement*EnterpriseAccountRetention*PipelineGeneration*Go-to-MarketPlaybooks*MarketValidation VentureandSystemsBuilding 0-to-1ProductDevelopment*ProcessArchitecture*OperationalInfrastructure*Founder-LedSales DataandTechnicalFluency SQL*Python*FinancialModeling*API-DrivenWorkflows*AnalyticsandDashboarding "
+}

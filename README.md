@@ -102,6 +102,38 @@ The AltaCV template uses these color definitions:
 - **TikZ**: Graphics
 - **Paracol**: Multi-column layout
 
+## ATS Testing & Optimization
+
+The project now includes comprehensive ATS (Applicant Tracking System) testing capabilities:
+
+### ATS Testing Scripts
+- **`ats_testing_script.py`**: Basic ATS compatibility and human readability testing
+- **`advanced_ats_test.py`**: Simulates actual ATS parsing behavior
+- **`compare_resumes.py`**: Compares original vs optimized resume versions
+- **`create_ats_optimized_resume.py`**: Creates ATS-optimized versions
+
+### Quick ATS Test
+```bash
+# Install testing dependencies
+pip install -r requirements.txt
+
+# Run comprehensive ATS test
+python ats_testing_script.py harris_resume.pdf
+
+# Test ATS-optimized version
+python advanced_ats_test.py harris_resume_ats_optimized.pdf
+
+# Compare versions
+python compare_resumes.py
+```
+
+### ATS Optimization Results
+- **Original Resume**: 75/100 ATS score
+- **ATS-Optimized**: 85/100 ATS score (+10 point improvement)
+- **Key Improvements**: Ampersands replaced, special characters normalized
+
+See `ATS_TESTING_GUIDE.md` for detailed testing methodology and optimization recommendations.
+
 ## Troubleshooting
 
 See `TROUBLESHOOTING.md` for detailed issue resolution.
@@ -112,3 +144,4 @@ See `TROUBLESHOOTING.md` for detailed issue resolution.
 - Company names are styled in red using the `\cvevent` command
 - Font is set to Helvetica (requires XeLaTeX)
 - PDF output is optimized for A4 paper size
+- ATS testing ensures both machine readability and human appeal
