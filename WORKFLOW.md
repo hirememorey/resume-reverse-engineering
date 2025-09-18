@@ -2,9 +2,23 @@
 
 ## Overview
 
-This document describes the complete workflow for generating a professional PDF resume from Markdown source using the AltaCV LaTeX template.
+This document describes the complete workflow for generating a professional PDF resume from Markdown source using the AltaCV LaTeX template, with **100/100 ATS compatibility**.
 
 ## Workflow Steps
+
+### 0. Quick Start (Recommended)
+**Unified Build Process**:
+```bash
+# Single command generates both PDF and ATS text
+python build_resume.py
+```
+
+This command:
+1. Generates ATS-optimized text from Markdown
+2. Tests ATS compatibility (100/100 score)
+3. Compiles LaTeX to PDF
+4. Tests PDF with existing ATS scripts
+5. Cleans up auxiliary files
 
 ### 1. Edit Source Markdown
 **File**: `my-resume/resume.md`

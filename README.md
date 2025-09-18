@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project converts a Markdown resume (`my-resume/resume.md`) into a professionally formatted PDF using the AltaCV LaTeX template. The main challenge was implementing a Definition List format in Markdown that properly translates to LaTeX while maintaining the template's color styling (specifically red company names).
+This project converts a Markdown resume (`my-resume/resume.md`) into a professionally formatted PDF using the AltaCV LaTeX template, with **100/100 ATS compatibility**. The main challenge was implementing a Definition List format in Markdown that properly translates to LaTeX while maintaining the template's color styling (specifically red company names), and ensuring the resume is fully parseable by Applicant Tracking Systems (ATS).
 
 ## Project Structure
 
@@ -32,19 +32,28 @@ resume_reverse/
 - XeLaTeX (required for font handling)
 - Pandoc (optional, for basic Markdown to PDF conversion)
 
-### Generate PDF from LaTeX
+### Generate Both PDF and ATS Text (Recommended)
 ```bash
-# Use XeLaTeX (REQUIRED - pdfLaTeX will fail)
-/Library/TeX/texbin/xelatex harris_resume.tex
-
-# Or if xelatex is in PATH
-xelatex harris_resume.tex
+# Unified build process - generates both PDF and ATS-optimized text
+python build_resume.py
 ```
 
-### Generate PDF from Markdown (Basic)
+### Generate PDF from LaTeX (Manual)
 ```bash
-# Basic conversion (loses formatting)
-pandoc my-resume/resume.md -o basic_resume.pdf --pdf-engine=pdflatex
+# Use XeLaTeX (REQUIRED - pdfLaTeX will fail)
+/Library/TeX/texbin/xelatex harris_resume_ats_optimized.tex
+
+# Or if xelatex is in PATH
+xelatex harris_resume_ats_optimized.tex
+```
+
+### Generate ATS Text Only
+```bash
+# Generate ATS-optimized text from Markdown
+python simple_ats_converter.py
+
+# Test ATS compatibility
+python test_ats_text.py
 ```
 
 ## Critical Issues & Solutions
@@ -128,10 +137,15 @@ python compare_resumes.py
 ```
 
 ### ATS Optimization Results
-- **Original Resume**: 75/100 ATS score
-- **ATS-Optimized**: 100/100 ATS score (+25 point improvement)
-- **Key Improvements**: Ampersands replaced, special characters normalized, dedicated skills section added
-- **Single-Page Format**: Achieved with proper skills section organization while maintaining 100/100 ATS score
+- **Original Resume**: 45/100 ATS score
+- **ATS-Optimized**: 100/100 ATS score (+55 point improvement, 122% better)
+- **Key Improvements**: 
+  - Work experience parsing: ❌ Not parsed → ✅ 4 jobs parsed correctly
+  - Skills parsing: ❌ Not parsed → ✅ 3 categories parsed correctly
+  - ATS issues: 4 issues → 0 issues
+  - Ampersands replaced, special characters normalized
+- **Data-First Approach**: Markdown-to-ATS text converter ensures perfect parsing
+- **Unified Build Process**: Single command generates both PDF and ATS text
 
 See `ATS_TESTING_GUIDE.md` for detailed testing methodology and optimization recommendations.
 
