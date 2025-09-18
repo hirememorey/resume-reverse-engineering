@@ -88,9 +88,10 @@ python compare_resumes.py
 - [ ] Text extracts cleanly
 - [ ] Contact information is complete
 - [ ] Work experience is parseable
+- [ ] Skills section is properly formatted
 - [ ] No problematic characters
 - [ ] Human readability maintained
-- [ ] PDF fits on one page (skills section removed if needed)
+- [ ] PDF fits on one page with all sections
 
 ## Detailed Workflow
 
