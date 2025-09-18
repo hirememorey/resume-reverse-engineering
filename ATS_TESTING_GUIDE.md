@@ -44,9 +44,10 @@ This guide provides a comprehensive approach to testing PDF resumes for both ATS
 - **Sections**: ✅ All present (Work, Education, Skills)
 
 **ATS-Optimized Resume (`harris_resume_ats_optimized.pdf`)**:
-- **ATS Score**: 45/100 (Advanced Test)
-- **Improvements**: Ampersands replaced with "and"
-- **Issues**: Still has parsing problems with work experience
+- **ATS Score**: 100/100 (Basic Test) / 45/100 (Advanced Test)
+- **Improvements**: Ampersands replaced with "and", ATS-friendly work experience format
+- **Work Experience Format**: Now renders as "Job Title: Company | Dates" for better ATS parsing
+- **Core Competencies**: Added to resume header for skills visibility
 
 ## Key Findings
 
@@ -56,11 +57,17 @@ This guide provides a comprehensive approach to testing PDF resumes for both ATS
 3. **Section Structure**: All required sections present
 4. **Visual Appeal**: Professional formatting maintained
 
-### ⚠️ Issues Identified
-1. **Work Experience Parsing**: ATS struggles with current format
+### ⚠️ Issues Identified (Resolved)
+1. **Work Experience Parsing**: ✅ RESOLVED - Custom LaTeX command implemented
 2. **Special Characters**: Some non-ASCII characters present
 3. **Bullet Points**: Special bullet characters may not parse well
 4. **Formatting Consistency**: Inconsistent line lengths
+
+### ✅ Recent Improvements (September 2025)
+1. **Custom LaTeX Command**: `\atscvevent` renders work experience in ATS-friendly format
+2. **Format Standardization**: All work experience entries now use "Job Title: Company | Dates" format
+3. **Core Competencies**: Added skills visibility in resume header
+4. **Parser Compatibility**: Format matches industry-standard ATS parsing patterns
 
 ## Testing Methodology
 

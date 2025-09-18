@@ -125,6 +125,8 @@ nano my-resume/resume.md
 4. Ensure proper `\cvevent` structure
 
 #### 2.2 LaTeX Structure
+
+**Standard Format (Visual Only):**
 ```latex
 \cvsection{Work Experience}
 
@@ -141,6 +143,45 @@ nano my-resume/resume.md
 \item Next achievement
 \end{itemize}
 ```
+
+**ATS-Optimized Format (Recommended):**
+```latex
+\cvsection{Work Experience}
+
+\atscvevent{Job Title}{Company Name}{Date Range}{}
+
+\textbf{Project Subheading}
+\begin{itemize}
+\item Achievement 1
+\item Achievement 2
+\end{itemize}
+
+\atscvevent{Next Job}{Next Company}{Next Dates}{}
+\begin{itemize}
+\item Next achievement
+\end{itemize}
+```
+
+**Note**: The `\atscvevent` command renders work experience in ATS-friendly format (`Job Title: Company | Dates`) while maintaining visual appeal. This is the recommended approach for better ATS compatibility.
+
+#### 2.2.1 Custom LaTeX Command Definition
+
+To use the ATS-optimized format, add this command definition to your LaTeX file:
+
+```latex
+% Custom ATS-friendly work experience command
+\newcommand{\atscvevent}[4]{%
+  % ATS-friendly format that parsers can extract
+  \textbf{#1}: #2 | \textit{#3}%
+  \vspace{0.3em}%
+}
+```
+
+This command takes four parameters:
+- `#1`: Job Title (rendered in bold)
+- `#2`: Company Name (rendered in normal text)
+- `#3`: Date Range (rendered in italics)
+- `#4`: Location (not used in current implementation)
 
 #### 2.3 Special Characters
 - `&` becomes `\&`
