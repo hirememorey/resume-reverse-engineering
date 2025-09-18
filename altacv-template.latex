@@ -1,0 +1,87 @@
+\documentclass[10pt,a4paper,withhyper]{altacv}
+
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\iftutex
+  % If using xelatex or lualatex:
+  \setmainfont{Helvetica}
+  \setsansfont{Helvetica}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  % If using pdflatex:
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+% Change the colours if you want to
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{450808}
+\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{LightGrey}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change some fonts, if necessary
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% Bibliography (commented out for now)
+% \addbibresource{sample.bib}
+
+\begin{document}
+\name{$name$}
+\tagline{$subtitle$}
+
+%% You can add multiple photos on the left or right
+\photoR{2.8cm}{Globe_High}
+% \photoL{2.5cm}{Yacht_High,Suitcase_High}
+
+\personalinfo{%
+  % Not all of these are required!
+  \email{$email$}
+  \phone{$phone$}
+  \location{$location$}
+  \linkedin{$linkedin$}
+  \homepage{$homepage$}
+  % \github{github-id}
+  % \gitlab{gitlab-id}
+  % \stackoverflow{SO-id}{SO-name}
+  % \twitter{@twit}
+  % \skype{skype-id}
+  % \reddit{reddit-id}
+  % \extrainfo{extra information}
+  %% You can add your own arbitrary detail here
+  %% \icontext{<icon>}{<text>}
+  %% \iconlink{<icon>}{<link>}{<text>}
+}
+
+\makecvheader
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+% \AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always (re)provide a file name to \cvsection, e.g.
+%% \cvsection[page1sidebar]{Experience}
+\cvsection[page1sidebar]{$body$}
+
+\end{document}
