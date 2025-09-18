@@ -90,6 +90,7 @@ python compare_resumes.py
 - [ ] Work experience is parseable
 - [ ] No problematic characters
 - [ ] Human readability maintained
+- [ ] PDF fits on one page (skills section removed if needed)
 
 ## Detailed Workflow
 

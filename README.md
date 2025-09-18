@@ -131,6 +131,7 @@ python compare_resumes.py
 - **Original Resume**: 75/100 ATS score
 - **ATS-Optimized**: 85/100 ATS score (+10 point improvement)
 - **Key Improvements**: Ampersands replaced, special characters normalized
+- **Single-Page Format**: Skills section removed to fit on one page while maintaining 85/100 ATS score
 
 See `ATS_TESTING_GUIDE.md` for detailed testing methodology and optimization recommendations.
 
@@ -143,5 +144,6 @@ See `TROUBLESHOOTING.md` for detailed issue resolution.
 - The project uses a two-column layout with sidebar
 - Company names are styled in red using the `\cvevent` command
 - Font is set to Helvetica (requires XeLaTeX)
-- PDF output is optimized for A4 paper size
+- PDF output is optimized for A4 paper size and fits on one page
 - ATS testing ensures both machine readability and human appeal
+- Skills section removed to achieve single-page format while maintaining professional appearance
