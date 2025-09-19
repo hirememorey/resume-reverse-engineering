@@ -237,6 +237,23 @@ All major issues have been resolved and the project is fully functional with com
 
 ---
 
-**Last Updated**: September 18, 2025
-**Status**: ✅ Project Complete and Functional
+## Recent Updates (January 2025)
+
+### ✅ Resume Formatting Improvements
+1. **Company Name Consistency**: Removed duplicate company names from job titles
+   - Before: "Co-Founder and CEO, Scalpel: Scalpel | Dates"
+   - After: "Co-Founder and CEO: Scalpel | Dates"
+2. **Visual Styling Enhancement**: Company names now appear in bold red (matching Education section)
+3. **Globe Image Removal**: Removed unnecessary globe image for cleaner, more professional appearance
+4. **Content Update**: Updated eevo bullet point to highlight enterprise clients (McKinsey, Zoom, Merck, BBC)
+
+### ✅ Technical Improvements
+- **File Size Reduction**: PDF reduced from 0.12 MB to 0.05 MB (58% reduction)
+- **ATS Compatibility Maintained**: Still achieving 100/100 ATS compatibility score
+- **Source Synchronization**: Both LaTeX and Markdown files kept in sync
+
+---
+
+**Last Updated**: January 2025
+**Status**: ✅ Project Complete and Functional with Recent Enhancements
 **Next Review**: When making significant changes or adding new features

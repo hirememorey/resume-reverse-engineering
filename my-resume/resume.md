@@ -34,22 +34,22 @@ _2x Venture-Backed Founder & Turnaround Operator_
 
 ---
 
-**Co-Founder & CEO, Scalpel**
+**Co-Founder & CEO**
 : Scalpel | _October 2022 - January 2025_
 *   Built a vertical SaaS platform for medical supply management that cut 20+ weekly staff hours, leading the company to acquisition negotiations.
 *   Raised venture funding from Bienville Capital after validating product-market fit with 65+ customer interviews.
 
 ---
 
-**Commercial Product Manager, Capsule Pharmacy**
+**Commercial Product Manager**
 : Capsule Pharmacy | _February 2021 - October 2022_
 *   Launched and scaled the company's first B2B2C growth product (Patient.Page), driving a 20% increase in new customer acquisition in Year 1.
 
 ---
 
-**Co-Founder & COO, eevo**
+**Co-Founder & COO**
 : eevo | _May 2014 - January 2021_
-*   Developed VR training tools that improved surgery patient satisfaction by 33%, leading the company from inception to a successful exit.
+*   Developed VR training tools utilized by McKinsey, Zoom, Merck, and the BBC.
 *   Raised venture funding from Techstars, Sinai Ventures, and FundersClub while leading product, operations, and sales.
 ***
 
